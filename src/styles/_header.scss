@@ -1,0 +1,26 @@
+header {
+	.brand-container {
+		display: flex;
+		justify-content: space-between;
+
+		ul {
+			display: flex;
+
+			li {
+				padding: 10px 20px;
+				font-size: 12px;
+
+				&.active {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.logo {
+		width: 355px;
+		height: 52px;
+		background: url('./assets/images/logo.jpg');
+		margin: 20px auto;
+	}
+}
