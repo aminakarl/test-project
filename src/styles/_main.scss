@@ -1,0 +1,160 @@
+main {
+	max-width: 1440px;
+	margin: 0 auto;
+
+	.breadcrumbs {
+		display: flex;
+		padding: 10px 20px 15px 20px;
+		font-size: 12px;
+
+		li {
+			color: gray;
+
+			&::after {
+				content: ">";
+				margin: 0 5px;
+			}
+
+			&:last-child {
+				color: $color-copy-breadcrumbs;
+
+				&::after {
+					content: "";
+				}
+			}
+		}
+	}
+
+	.product {
+		display: flex;
+		flex-direction: row;
+		margin: 20px 100px 0 100px;
+
+		&-image {
+			background: url('./assets/images/drizzle_grey_apron.jpg') no-repeat;
+			width: 585px;
+			height: 585px;
+			background-size: contain;
+		}
+
+		&-details {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+
+			h1 {
+				font-weight: normal;
+				font-size: 22px;
+			}
+
+			.callout {
+				text-transform: uppercase;
+				color: $color-copy-callout;
+				font-size: 12px;
+				margin: 8px 0;
+			}
+
+			.message {
+				font-size: 13px;
+				color: $color-copy-message;
+				padding: 10px 0;
+			}
+
+			.selector {
+				.headline {
+					margin-bottom: 5px;
+					font-size: 14px;
+
+					span {
+						color: $color-copy-selection;
+
+						&:last-child {
+							font-weight: bold;
+						}
+					}
+				}
+
+				.options {
+					display: flex;
+
+					li {
+						margin-right: 5px;
+						display: flex;
+
+						&:hover {
+							cursor: pointer;
+						}
+
+						&.selected {
+							border: 3px solid $color-selection-border;
+						}
+
+						span {
+							display: inline-block;
+						}
+					}
+				}
+
+				&-color {
+					.options {
+
+						li {
+							box-shadow: 0 4px 5px rgb(0 0 0 / 10%);
+							border: 3px solid white;
+
+							span {
+								width: 56px;
+								height: 36px;
+								margin: 1px;
+								border: 1px solid $color-selection-border;
+							}
+	
+							.drizzle-grey {
+								background: $swatch-drizzle-grey;
+							}
+	
+							.jet-black {
+								background: $swatch-jet-black;
+							}
+	
+							.navy-blue {
+								background: $swatch-navy-blue;
+							}
+	
+							.claret-red {
+								background: $swatch-claret-red;
+							}
+	
+							.sage-green {
+								background: $swatch-sage-green;
+							}
+						}
+					}
+				}
+
+				&-personalization,
+				&-size {
+					margin-top: 7px;
+
+					li {
+						border: 1px solid $color-selection-border;
+						font-size: 11px;
+						color: $color-copy-selection;
+						align-items: center;
+
+						span {
+							padding: 6px 8px;
+						}
+					}
+				}
+			}
+
+			.price {
+				font-size: 15px;
+				font-weight: bold;
+				color: $color-copy-selection;
+				margin-top: 35px;
+			}
+		}
+	}
+}
