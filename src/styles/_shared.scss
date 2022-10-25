@@ -7,6 +7,7 @@ $color-copy-breadcrumbs: #222222;
 $color-searchbar: #555555;
 $color-navigation-border: #999999;
 $color-selection-border: #5A5A5A;
+$color-product-info-border: #DADADA;
 $background-beige: #F3F1EC;
 $swatch-drizzle-grey: #999C92;
 $swatch-jet-black: #323232;
@@ -24,4 +25,9 @@ $swatch-sage-green: #A3AF8A;
 
 ul {
 	list-style-type: none;
+}
+
+// SHARED STYLES
+.hidden {
+	display: none;
 }

@@ -28,7 +28,7 @@ main {
 	.product {
 		display: flex;
 		flex-direction: row;
-		margin: 20px 100px 0 100px;
+		margin: 20px 150px 0 150px;
 
 		&-image {
 			background: url('./assets/images/drizzle_grey_apron.jpg') no-repeat;
@@ -154,6 +154,76 @@ main {
 				font-weight: bold;
 				color: $color-copy-selection;
 				margin-top: 35px;
+			}
+
+			.quantity {
+				display: inline-block;
+				width: 50px;
+				padding: 8px 5px;
+				margin: 6px 0;
+				font-size: 14px;
+				text-align: center;
+			}
+
+			.add-to-cart {
+				text-transform: uppercase;
+				height: 41px;
+				font-size: 14px;
+				font-weight: bold;
+				background: $color-copy-callout;
+				color: white;
+				border: 0;
+				margin-top: 10px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			.product-information {
+				border-top: 1px solid black;
+				border-bottom: 1px solid black;
+				margin: 40px 0;
+
+				> div {
+					padding: 10px 0 10px 12px;
+					border-bottom: 1px solid $color-product-info-border;
+
+					&:last-child {
+						border: 0;
+					}
+				}
+
+				h2 {
+					text-transform: uppercase;
+					padding: 17px 0 17px 17px;
+					font-size: 18px;
+					line-height: 12px;
+					font-weight: 400;
+					color: $color-copy-message;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+
+				h3 {
+					font-size: 13px;
+					font-weight: bold;
+				}
+
+				p {
+					padding-bottom: 10px;
+					font-size: 13px;
+					color: $color-copy-selection;
+				}
+
+				li {
+					font-size: 13px;
+					color: $color-copy-selection;
+					list-style-type: disc;
+					margin: 2px 30px;
+				}
 			}
 		}
 	}
