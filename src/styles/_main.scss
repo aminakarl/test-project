@@ -58,6 +58,14 @@ main {
 				font-size: 13px;
 				color: $color-copy-message;
 				padding: 10px 0;
+
+				a {
+					text-decoration: none;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
 			}
 
 			.selector {
@@ -85,7 +93,8 @@ main {
 							cursor: pointer;
 						}
 
-						&.selected {
+						&.selected,
+						&:hover {
 							border: 3px solid $color-selection-border;
 						}
 
@@ -144,6 +153,11 @@ main {
 
 						span {
 							padding: 6px 8px;
+						}
+
+						&.selected span,
+						&:hover span {
+							padding: 6px;
 						}
 					}
 				}
