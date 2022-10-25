@@ -1,18 +1,24 @@
+// COLORS
+$color-copy: #010101;
+$color-copy-callout: #E81818;
+$color-searchbar: #555555;
+$color-navigation-border: #999999;
+$color-selection-border: #5A5A5B;
+$background-beige: #F3F1EC;
+$swatch-drizzle-grey: #999C92;
+$swatch-jet-black: #323232;
+$swatch-navy-blue: #1D2136;
+$swatch-claret-red: #972215;
+$swatch-sage-green: #A3AF8A;
+
+// RESET
 * {
 	margin: 0;
 	padding: 0;
-}
-
-body {
 	font-family: Mulish, sans-serif;
-	color: #010101;
+	color: $color-copy;
 }
 
 ul {
 	list-style-type: none;
-}
-
-.section-content {
-	max-width: 1390px;
-	margin: auto;
 }

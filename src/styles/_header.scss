@@ -1,5 +1,7 @@
 header {
 	.brand-container {
+		max-width: 1390px;
+		margin: auto;
 		display: flex;
 		justify-content: space-between;
 
@@ -10,8 +12,9 @@ header {
 				padding: 10px 20px;
 				font-size: 12px;
 
-				&.active {
+				&.active, &:hover {
 					text-decoration: underline;
+					cursor: pointer;
 				}
 			}
 		}
@@ -22,5 +25,109 @@ header {
 		height: 52px;
 		background: url('./assets/images/logo.jpg');
 		margin: 20px auto;
+	}
+
+	.search-bar {
+		width: 630px;
+		margin: auto;
+
+		form {
+			width: inherit;
+			height: 31px;
+			display: flex;
+
+			input {
+				border-radius: 0;
+				border: 1px solid $color-searchbar;
+			}
+
+			input[type=text] {
+				padding: 6px 8px;
+				display: flex;
+				flex: 1;
+				color: $color-searchbar;
+				font-size: 14px;
+			}
+
+			input[type=button] {
+				width: 32px;
+				background: $color-searchbar;
+			}
+		}
+	}
+
+	.nav {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		li {
+			padding: 12px 6px;
+			border-bottom: 2px solid transparent;
+
+			&:hover {
+				cursor: pointer;
+				border-bottom: 2px solid $color-navigation-border;
+			}
+		}
+
+		&-secondary {
+			ul {
+				width: 990px;
+				margin: 10px auto 0 auto;
+			}
+
+			li {
+				font-size: 12px;
+			}
+		}
+
+		&-primary {
+			text-transform: uppercase;
+			border-top: 1px solid $color-navigation-border;
+			border-bottom: 1px solid $color-navigation-border;
+
+			ul {
+				min-width: 990px;
+				max-width: 1440px;
+				margin: 0 auto;
+			}
+
+			li {
+				font-size: 13px;
+
+				&.sale {
+					color: $color-copy-callout;
+				}
+			}
+		}
+	}
+
+	.promo-banner {
+		display: flex;
+		text-transform: uppercase;
+		font-size: 11px;
+		background: $background-beige;
+		padding: 8px 10px;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			align-items: center;
+			justify-content: center;
+			height: 29px;
+			border-right: 1px solid black;
+
+			&:last-child {
+				border: 0;
+			}
+
+			p:first-child {
+				font-weight: bold;
+			}
+		}
 	}
 }
