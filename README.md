@@ -1,15 +1,11 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Welcome to the test project!
 
-This project has been created using **webpack-cli**, you can now run
+This is a project to learn webpack and do the WS coding challenge.
 
-```
-npm run build
-```
+## Getting started
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
+1. Check out the codebase: `git checkout https://github.com/aminakarl/test-project.git`
+1. Navigate inside the project
+1. Install the dependencies: `npm install`
+1. Run a build: `npm run build`
+1. Start the server: `npm run serve`
